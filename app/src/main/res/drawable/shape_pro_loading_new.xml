@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0.0"
+    android:pivotX="50.0%"
+    android:pivotY="50.0%"
+    android:toDegrees="360.0" >
+
+    <!-- <shape -->
+    <!-- android:innerRadius="25dp"内环的半径 -->
+    <!-- android:shape="ring" 环形 -->
+    <!-- android:thickness="2dp"环的厚度 -->
+    <!-- android:useLevel="false" > -->
+    <shape
+        android:innerRadius="20dp"
+        android:shape="ring"
+        android:thickness="2.5dp"
+        android:useLevel="false" >
+
+        <!-- android:centerY="0.5"渐变中心X点坐标的相对位置 -->
+        <!-- android:centerX="0.5" 	渐变中心Y点坐标的相对位置 -->
+        <gradient
+            android:centerColor="@color/md_blue_300"
+            android:centerX="0.5"
+            android:centerY="0.5"
+            android:endColor="@color/md_blue_50"
+            android:startColor="@color/font_blue"
+            android:type="sweep"
+            android:useLevel="false" />
+    </shape>
+
+</rotate>

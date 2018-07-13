@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时的文字颜色 -->
+    <item android:state_checked="true" android:color="@color/font_content"/>
+    <!-- 获得焦点时的文字颜色 -->
+    <!-- <item android:state_focused="true" android:color="@color/font_content"/> -->
+    <!-- 触摸模式下单击时的文字颜色 -->
+    <item android:state_pressed="true" android:color="@color/font_content"/>
+    <!-- 默认时的文字颜色 -->
+    <item android:color="@color/font_gray"/>
+
+</selector>

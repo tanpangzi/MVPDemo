@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/view_group_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical">
+
+    <!--gps安装 sim imei输入-->
+    <com.tan.mvpdemo.uitl.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_imei"
+            style="@style/car_info_tv_style"
+            android:paddingLeft="5dp"
+            android:text="IMEI" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_10"
+            android:layout_toEndOf="@+id/tv_imei"
+            android:layout_toRightOf="@+id/tv_imei"
+            android:text="@string/userinfo_xx"
+            android:textColor="@color/red" />
+
+
+        <EditText
+            android:id="@+id/et_input_imei"
+            style="@style/dyt_et"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_scan"
+            android:layout_toStartOf="@+id/iv_scan"
+            android:text="14531167087"
+            android:digits="@string/text_id_card_digits"
+            android:hint="@string/input_scan_imei"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/scanning" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="50dp"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/car_info_tv_style"
+            android:paddingLeft="5dp"
+            android:text="@string/deivice_type" />
+
+        <TextView
+            android:id="@+id/tv_device_type"
+            style="@style/car_info_tv_style"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="50dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            style="@style/car_info_tv_style"
+            android:paddingLeft="5dp"
+            android:text="@string/device_name" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            style="@style/car_info_tv_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/distance_15" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"
+        android:background="@color/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_sim"
+            style="@style/car_info_tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="SIM卡号" />
+
+        <EditText
+            android:id="@+id/et_device_sim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1064741943033"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:layout_toRightOf="@id/tv_sim"
+            android:background="@null"
+            android:gravity="right"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="@string/search"
+            android:textColor="#EB6617"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>

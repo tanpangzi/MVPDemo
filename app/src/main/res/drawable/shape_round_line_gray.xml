@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false" >
+
+    <!-- 半圆矩形 -->
+    <!-- 1.Shape简介 -->
+    <!-- 属性： -->
+    <!-- <shape>  android:shape=["rectangle" | "oval" | "line" | "ring"] -->
+    <!-- 其中rectagle矩形，oval椭圆，line水平直线，ring环形 -->
+    <!-- android:useLevel boolean值，如果当做是LevelListDrawable使用时值为true，否则为false -->
+
+
+    <!-- 填充 -->
+    <solid android:color="@color/transparent" />
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+
+    <!-- 描边：边框线的颜色和宽度 -->
+    <stroke
+        android:width="2px"
+        android:color="@color/black_10" />
+
+</shape>

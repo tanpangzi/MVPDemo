@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/container_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="张三"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_little"/>
+
+                <TextView
+                    android:id="@+id/container_plate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/container_name"
+                    android:text="粤B123456"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font_size_little"/>
+
+                <ImageView
+                    android:id="@+id/containe_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/container_plate"
+                    android:layout_toRightOf="@+id/container_plate"
+                    android:src="@mipmap/alarm_icon_wired"/>
+
+                <TextView
+                    android:id="@+id/container_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="【静止】"
+                    android:textColor="@color/font_blue"
+                    android:textSize="@dimen/font_size_normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_5">
+
+                <TextView
+                    android:id="@+id/container_parameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="石家庄 | ACC 开 33KM/H"
+                    android:textColor="@color/font_content"
+                    android:textSize="@dimen/font_size_little"/>
+
+                <TextView
+                    android:id="@+id/container_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_parameter"
+                    android:layout_marginTop="3dp"
+                    android:text="08-07 18:42 静止2小时22分"
+                    android:textSize="@dimen/font_size_little"/>
+
+                <TextView
+                    android:id="@+id/container_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="断电报警"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#f50521"
+                    android:textSize="@dimen/font_size_normal"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/distance_10"
+            android:src="@drawable/arrow_right_black"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_horizontal_gray_style"
+        android:layout_height="10dp"
+        android:background="@color/bg_default"/>
+</LinearLayout>

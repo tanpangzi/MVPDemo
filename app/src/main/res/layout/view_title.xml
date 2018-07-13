@@ -1,0 +1,127 @@
+<RelativeLayout
+    style="@style/view_group_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/view_left"
+        style="@style/view_title_view_style">
+
+        <com.tan.mvpdemo.widget.AutoBgImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/arrow_left_black"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/back"
+            android:textColor="@color/selector_title_txt_color"
+            android:textSize="@dimen/font_size_normal"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_left_new"
+        style="@style/view_title_view_style">
+
+        <com.tan.mvpdemo.widget.AutoBgImageView
+            android:id="@+id/img_left_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/arrow_left_black"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_right_new"
+        style="@style/view_title_view_style"
+        android:layout_toLeftOf="@+id/view_right">
+
+        <com.tan.mvpdemo.widget.AutoBgImageView
+            android:id="@+id/img_right_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/arrow_right_black"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_right"
+        style="@style/view_title_view_style"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/enter"
+            android:textColor="@color/selector_title_txt_color"
+            android:textSize="@dimen/font_size_normal"
+            android:visibility="gone"/>
+
+        <com.tan.mvpdemo.widget.AutoBgImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/arrow_right_black"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_big"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_normal"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/view_group_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.tan.mvpdemo.uitl.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/line_grey_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_red_start"
+            android:gravity="center_vertical"
+            android:minWidth="100dp"
+            android:padding="@dimen/distance_15"
+            android:text="@string/constumer_name"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <com.tan.mvpdemo.widget.ContainsEmojiEditText
+            android:id="@+id/et_consumer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入客户名称"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:minHeight="@dimen/btn_height"
+            android:padding="@dimen/distance_15"
+            android:singleLine="true"
+            android:textColor="@color/font_content"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"
+        android:background="@color/line_grey_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_red_start"
+            android:gravity="center_vertical"
+            android:minWidth="100dp"
+            android:padding="@dimen/distance_15"
+            android:text="@string/car_num"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <com.tan.mvpdemo.widget.ContainsEmojiEditText
+            android:id="@+id/et_car_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入车牌号"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:minHeight="@dimen/btn_height"
+            android:padding="@dimen/distance_15"
+            android:singleLine="true"
+            android:textColor="@color/font_content"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/font_size_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginRight="@dimen/distance_15"
+        android:background="@color/line_grey_light" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_red_start"
+            android:gravity="center_vertical"
+            android:minWidth="100dp"
+            android:padding="@dimen/distance_15"
+            android:text="@string/orgnization_name"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/font_size_normal" />
+
+        <com.tan.mvpdemo.widget.AutoBgTextView
+            android:id="@+id/tv_org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/distance_5"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical|right"
+            android:hint="请选择"
+            android:padding="@dimen/distance_15"
+            android:textColor="@color/font_content"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/font_size_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey_light" />
+
+    <LinearLayout
+        android:id="@+id/ll_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

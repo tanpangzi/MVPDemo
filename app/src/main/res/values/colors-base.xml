@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ********************  Title Colors ********************  -->
+    <!-- 标题栏背景颜色 -->
+    <color name="title_bg_color">#FFFFFF</color>
+    <!-- 标题栏左右文字颜色 -->
+    <color name="title_txt_color">#ff3c3c3c</color>
+    <!-- 标题栏左右文字颜色 -->
+    <color name="title_txt_color_select">#7F3c3c3c</color>
+
+    <!-- ********************  Font Colors ********************  -->
+    <!-- 黑色文本 -->
+    <color name="font_black">#ff3c3c3c</color>
+    <!-- 黑色文本 -->
+    <color name="font_black_select">#7F3c3c3c</color>
+    <!-- 字体黑-->
+    <color name="font_content">#ff5c5c5c</color>
+    <!-- 灰色文本 -->
+    <color name="font_gray">#ff999999</color>
+    <!-- 白色文本 -->
+    <color name="font_white">#ffffffff</color>
+
+    <!-- ********************  Background Colors ********************  -->
+    <!--默认背景-->
+    <color name="bg_default">#fff5f5f5</color>
+    <!--背景灰-->
+    <color name="bg_grey">#fff6f6f6</color>
+
+    <!-- ********************  black ********************  -->
+    <!-- 100%不透明黑色 -->
+    <color name="black">#FF000000</color>
+    <!-- 95%不透明黑色 -->
+    <color name="black_95">#F2000000</color>
+    <!-- 90%不透明黑色 -->
+    <color name="black_90">#E6000000</color>
+    <!-- 85%不透明黑色 -->
+    <color name="black_85">#D9000000</color>
+    <!-- 80%不透明黑色 -->
+    <color name="black_80">#CD000000</color>
+    <!-- 75%不透明黑色 -->
+    <color name="black_75">#BF000000</color>
+    <!-- 70%不透明黑色 -->
+    <color name="black_70">#B3000000</color>
+    <!-- 65%不透明黑色 -->
+    <color name="black_65">#A6000000</color>
+    <!-- 60%不透明黑色 -->
+    <color name="black_60">#99000000</color>
+    <!-- 55%不透明黑色 -->
+    <color name="black_55">#8C000000</color>
+    <!-- 50%不透明黑色 -->
+    <color name="black_50">#7F000000</color>
+    <!-- 45%不透明黑色 -->
+    <color name="black_45">#73000000</color>
+    <!-- 40%不透明黑色 -->
+    <color name="black_40">#66000000</color>
+    <!-- 35%不透明黑色 -->
+    <color name="black_35">#58000000</color>
+    <!-- 30%不透明黑色 -->
+    <color name="black_30">#4C000000</color>
+    <!-- 25%不透明黑色 -->
+    <color name="black_25">#3F000000</color>
+    <!-- 20%不透明黑色 -->
+    <color name="black_20">#33000000</color>
+    <!-- 15%不透明黑色 -->
+    <color name="black_15">#26000000</color>
+    <!-- 10%不透明黑色 -->
+    <color name="black_10">#19000000</color>
+    <!-- 5%不透明黑色 -->
+    <color name="black_5">#0C000000</color>
+    <!-- 0%不透明黑色==透明色 -->
+    <color name="transparent">#00000000</color>
+
+    <!--  ********************  black ********************  -->
+    <!-- 100%不透明白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 95%不透明白色 -->
+    <color name="white_95">#F2ffffff</color>
+    <!-- 90%不透明白色 -->
+    <color name="white_90">#E6ffffff</color>
+    <!-- 85%不透明白色 -->
+    <color name="white_85">#D9ffffff</color>
+    <!-- 80%不透明白色 -->
+    <color name="white_80">#CDffffff</color>
+    <!-- 75%不透明白色 -->
+    <color name="white_75">#BFffffff</color>
+    <!-- 70%不透明白色 -->
+    <color name="white_70">#B3ffffff</color>
+    <!-- 65%不透明白色 -->
+    <color name="white_65">#A6ffffff</color>
+    <!-- 60%不透明白色 -->
+    <color name="white_60">#99ffffff</color>
+    <!-- 55%不透明白色 -->
+    <color name="white_55">#8Cffffff</color>
+    <!-- 50%不透明白色 -->
+    <color name="white_50">#7Fffffff</color>
+    <!-- 45%不透明白色 -->
+    <color name="white_45">#73ffffff</color>
+    <!-- 40%不透明白色 -->
+    <color name="white_40">#66ffffff</color>
+    <!-- 35%不透明白色 -->
+    <color name="white_35">#58ffffff</color>
+    <!-- 30%不透明白色 -->
+    <color name="white_30">#4Cffffff</color>
+    <!-- 25%不透明白色 -->
+    <color name="white_25">#3Fffffff</color>
+    <!-- 20%不透明白色 -->
+    <color name="white_20">#33ffffff</color>
+    <!-- 15%不透明白色 -->
+    <color name="white_15">#26ffffff</color>
+    <!-- 10%不透明白色 -->
+    <color name="white_10">#19ffffff</color>
+    <!-- 5%不透明白色 -->
+    <color name="white_5">#0Cffffff</color>
+
+    <!--  ********************  line ********************  -->
+    <!-- 分割线颜色 -->
+    <color name="line_grey">#ff999999</color>
+
+    <color name="line_grey_light">#ffdddddd</color>
+
+    <!-- 蓝色文字 -->
+    <color name="font_blue">#ff00AAFF</color>
+    <!-- 绿色文字 -->
+    <color name="font_green">#ff2aab2b</color>
+    <!-- 扫描过程中的黄点颜色 -->
+    <color name="yellow">#c0ffbd21</color>
+	<color name="red">#FFFF0000</color>
+
+    <color name="blue">#00AAFF</color>
+    <color name="blue_60">#9900AAFF</color>
+
+    <color name="main_head_area_background">#FFF17203</color>
+
+    <color name="view_line">#c3c3c3</color>
+    <color name="default_black">#000000</color>
+    <color name="default_background">#f6f6f6</color>
+    <color name="text_color">#333333</color>
+
+    <color name="srl_color_1">#f44ddb</color>
+    <color name="srl_color_2">#61ed50</color>
+    <color name="srl_color_3">#efea5c</color>
+    <color name="srl_color_4">#4cf2e5</color>
+
+    <color name="activity_bg_color">#fffafafa</color>
+    <color name="top_category_bar_background">#ffeeeeee</color>
+    <color name="divider">#ffdddddd</color>
+
+    <color name="category_tab_text">#ff5c5c5c</color>
+    <color name="category_tab_text_dark">#F4511E</color>
+    <color name="category_tab_highlight_text">#F4511E</color>
+    <color name="category_tab_highlight_text_dark">#ffffffff</color>
+    <color name="category_tab_highlight_bg">#ffffffff</color>
+    <color name="category_tab_highlight_dark_bg">#fffafafa</color>
+
+</resources>

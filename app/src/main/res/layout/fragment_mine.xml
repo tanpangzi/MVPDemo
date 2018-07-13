@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/account_manager_activity"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/default_background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/activity_main_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_name_mine"
+            android:textColor="@color/default_black"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/activity_account_manager_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/persona_info_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/persona_info_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_30">
+
+                <ImageView
+                    android:id="@+id/activity_main_im_head_portrait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_image"/>
+
+                <TextView
+                    android:id="@+id/activity_main_tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/distance_5"
+                    android:text="@string/mine_username"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_middle"/>
+
+                <TextView
+                    android:id="@+id/activity_main_tv_usertitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mine_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_normal"/>
+
+            </LinearLayout>
+
+            <!--设置-->
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/account_manager_ll_item_tow_marginTop"
+                android:layout_below="@id/persona_info_ll"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/setting"
+                android:drawablePadding="@dimen/distance_20"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/account_manager_ll_item"
+                android:paddingLeft="@dimen/account_manager_ll_item_tv_marginLeft"
+                android:paddingRight="@dimen/account_manager_ll_item_tv_marginStart"
+                android:text="@string/mine_setting"
+                android:textColor="@color/default_black"
+                android:textSize="@dimen/font_size_normal"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

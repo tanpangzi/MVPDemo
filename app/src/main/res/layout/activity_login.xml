@@ -1,0 +1,111 @@
+<RelativeLayout
+    style="@style/view_group_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.tan.mvpdemo.widget.AutoBgImageView
+                    android:id="@+id/img_portrait"
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:src="@mipmap/login_logo"
+                    custom:bgAlpha="180"/>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tan.mvpdemo.widget.ContainsEmojiEditText
+                        android:id="@+id/et_login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="hq0001"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/phone"
+                        android:drawablePadding="@dimen/distance_15"
+                        android:hint="@string/account_hint_fix"
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:textColor="@color/font_content"
+                        android:textColorHint="@color/font_gray"
+                        android:textSize="@dimen/font_size_normal"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizontal_gray_style"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tan.mvpdemo.widget.ContainsEmojiEditText
+                        android:id="@+id/et_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="123456"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/pass_word"
+                        android:drawablePadding="@dimen/distance_15"
+                        android:hint="@string/please_input_password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/font_content"
+                        android:textColorHint="@color/font_gray"
+                        android:textSize="@dimen/font_size_normal"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_horizontal_gray_style"/>
+
+            </LinearLayout>
+
+
+            <com.tan.mvpdemo.widget.AutoBgButton
+                android:id="@+id/btn_login_submit"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/distance_45"
+                android:background="@color/main_head_area_background"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_middle"
+                custom:bgAlpha="150"
+                custom:bgRadius="3dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

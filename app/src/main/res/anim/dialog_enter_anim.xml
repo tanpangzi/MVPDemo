@@ -1,0 +1,26 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- android:duration="300"设置动画持续时间为0.3秒 -->
+    <!-- android:fillAfter="true"设置动画结束后保持当前的位置（即不返回到动画开始前的位置） -->
+    <!-- fromXScale（浮点型）属性为动画起始时X坐标上的缩放尺寸 -->
+    <!-- fromYScale（浮点型）属性为动画起始时Y坐标上的缩放尺寸 -->
+    <!-- toXScale（浮点型） 属性为动画结束时X坐标上的缩放尺寸 -->
+    <!-- toYScale（浮点型） 属性为动画结束时Y坐标上的缩放尺寸 -->
+    <!-- 0.0表示收缩到没有  1.0表示正常无缩放  值小于1.0表示收缩  值大于1.0表示放大 -->
+    <!-- pivotX（浮点型） 0%-100%中取值 属性为动画相对于物件的X坐标的开始位置 -->
+    <!-- pivotY（浮点型）0%-100%中取值  属性为动画相对于物件的Y坐标的开始位置 -->
+
+
+    <!-- 弹出时动画 -->
+    <scale
+        android:duration="300"
+        android:fillAfter="false"
+        android:fromXScale="0"
+        android:fromYScale="0.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+</set>

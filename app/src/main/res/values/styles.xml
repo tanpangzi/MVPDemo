@@ -1,0 +1,229 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="StartAppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowBackground">@color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- dialog style -->
+    <style name="dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- ==========默认对话框========== -->
+    <style name="dialog_default" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <!-- 公共模块.list_style -->
+    <style name="list_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:divider">@color/line_grey</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:listSelector">@drawable/selector_white_black_5</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+    </style>
+
+    <style name="list_style_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:divider">@color/line_grey</item>
+        <item name="android:dividerHeight">0px</item>
+        <item name="android:listSelector">@drawable/selector_white_black_5</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+    </style>
+
+    <!-- 公共模块.title_btn_style -->
+    <style name="view_title_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <!--<item name="android:background">@drawable/selector_title_btn</item>-->
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- ********************************************分割线 -->
+    <!-- 横向灰色线条 -->
+    <style name="line_horizontal_gray_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_grey</item>
+    </style>
+    <!-- 竖向灰色线条 -->
+    <style name="line_vertical_gray_style">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_grey</item>
+    </style>
+
+    <!-- 竖向灰色虚线条 -->
+    <style name="line_vertical_gray_style_dotted">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@mipmap/img_vertical_gray_style</item>
+    </style>
+    <!-- **********************************************分割线 -->
+
+
+    <!-- 公共模块.round_image_view -->
+    <style name="round_image_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:src">@drawable/img_default</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="popupwindow_view_anim">
+        <item name="android:windowEnterAnimation">@anim/popu_view_up</item>
+        <item name="android:windowExitAnimation">@anim/popu_view_down</item>
+    </style>
+
+    <!--1.沒有titleview的時候需要設置 该style 2.有输入法的时候 需要设置该style-->
+    <style name="view_group_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/title_bg_color</item>
+        <!--View设置了android:fitsSystemWindows="true"，那么你对该View设置的其他padding将通通无效-->
+        <item name="android:fitsSystemWindows">true</item>
+        <!--clipToPadding是ViewGroup的属性。这个属性定义了是否允许ViewGroup在padding中绘制,该值默认为true,即不允许。-->
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <!-- 首页的底部radio btn样式 -->
+    <style name="radio_btn_main_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/selector_blue_grey_txt_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size_little</item>
+        <item name="android:background">@color/white_70</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:drawablePadding">@dimen/distance_5</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="car_info_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="dyt_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxEms">10</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <!--录单页面 每行 key view 的样式-->
+    <style name="txt_order_add_key">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">125dp</item>
+        <item name="android:textColor">@color/font_black</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:paddingTop">@dimen/distance_15</item>
+        <item name="android:paddingBottom">@dimen/distance_15</item>
+        <item name="android:paddingRight">@dimen/distance_15</item>
+        <item name="android:paddingLeft">@dimen/distance_15</item>
+        <item name="android:drawablePadding">@dimen/distance_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--录单页面 每行 value view  请选择 的样式-->
+    <style name="txt_order_add_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/font_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:drawablePadding">@dimen/distance_5</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:hint">请选择</item>
+        <item name="android:drawableRight">@mipmap/right_arrow</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--录单页面 每行 value view  输入框 的样式-->
+    <style name="et_order_add_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/font_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:textColorHint">@color/font_gray</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="dialog_bottom_full" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <declare-styleable name="PageGridView">
+        <!--行数，如果为0表示横向显示gridview-->
+        <attr name="PagingRows" format="integer" />
+        <!--列数,如果为0表示纵向显示gridview-->
+        <attr name="PagingColums" format="integer" />
+        <attr name="PagingDiver" format="reference" />
+    </declare-styleable>
+
+</resources>

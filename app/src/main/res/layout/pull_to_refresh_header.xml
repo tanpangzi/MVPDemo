@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/view_group_parent"
+    android:background="@color/transparent"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/pull_to_refresh_pull_label"
+        android:textColor="@color/font_gray" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/pull_to_refresh_text">
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/shape_pro_progressbar"
+            android:indeterminateDuration="500"
+            android:visibility="gone" />
+
+        <!--
+             <ImageView
+            android:id="@+id/pull_to_refresh_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/pull_to_refresh_text"
+            android:contentDescription="@null" />
+        -->
+
+        <com.tan.mvpdemo.widget.pullview.RoundProgressBar
+            android:id="@+id/pull_to_refresh_roundprogressbar"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerInParent="true"
+            android:background="@null" />
+    </RelativeLayout>
+</RelativeLayout>

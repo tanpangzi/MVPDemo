@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义控件属性文件，下拉属性控件的属性 -->
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color"/>
+        <attr name="headerBackground" format="reference|color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="bothnot" value="0x4"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- ImageView实现圆形、圆角图片 -->
+    <declare-styleable name="CustomImageViewRound">
+
+        <!-- 圆角：圆角大小 -->
+        <attr name="borderRadius" format="dimension"/>
+        <!-- 图片类型：圆角或者圆心：圆角大小 -->
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- Button、ImageView实现圆角,点击变色 -->
+    <declare-styleable name="AutoBg">
+
+        <!-- 圆角：圆角大小 -->
+        <attr name="bgRadius" format="dimension"/>
+        <attr name="bgAlpha" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="UITabViewData">
+        <attr name="tabNames" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <!--是否显示农历-->
+        <attr name="show_lunar" format="boolean" />
+        <!--是否显示上月和下月-->
+        <attr name="show_last_next" format="boolean" />
+        <!--是否显示节假日-->
+        <attr name="show_holiday" format="boolean" />
+        <!--是否显示节气-->
+        <attr name="show_term" format="boolean" />
+        <!--阳历的日期颜色-->
+        <attr name="solar_color" format="color" />
+        <!--阳历的日期尺寸-->
+        <attr name="solar_size" format="integer" />
+        <!--农历的日期颜色-->
+        <attr name="lunar_color" format="color" />
+        <!--农历的日期尺寸-->
+        <attr name="lunar_size" format="integer" />
+        <!--节日文字颜色-->
+        <attr name="holiday_color" format="color" />
+        <!--选中的日期文字颜色-->
+        <attr name="choose_color" format="color" />
+        <!--选中的日期背景-->
+        <attr name="day_bg" format="reference" />
+        <!--单选时切换月份，是否选中上次的日期-->
+        <attr name="switch_choose" format="boolean" />
+        <!--设置单选、多选-->
+        <attr name="choose_type" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WeekView">
+        <!--周的表示形式（x.x.x.x.x.x.x）-->
+        <attr name="week_str" format="string" />
+        <!--周的文字颜色-->
+        <attr name="week_color" format="color" />
+        <!--周的文字大小-->
+        <attr name="week_size" format="integer" />
+    </declare-styleable>
+
+    <!--TabIndicator的参数设置-->
+    <declare-styleable name="PagerSlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackgrounds" format="reference" />
+        <attr name="sameLine" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+</resources>
